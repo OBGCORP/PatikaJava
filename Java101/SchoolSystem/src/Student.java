@@ -49,7 +49,7 @@ public class Student {
         System.out.println("Physics Verbal Grade: " + this.phy.verbal);
     }
 
-    void calcAverage() {
+    void calculateAvgGrade() {
         int mathAvg = (80 * this.math.note) / 100 + (20 * this.math.verbal) / 100;
         int bioAvg = (80 * this.chem.note) / 100 + (20 * this.chem.verbal) / 100;
         int phyAvg = (80 * this.phy.note) / 100 + (20 * this.phy.verbal) / 100;
@@ -58,7 +58,7 @@ public class Student {
         System.out.println("Average: " + this.avg);
     }
 
-    void isPass() {
+    void passingStatus() {
         if (avg >= 50) {
             System.out.println("Congratulations! You passed the class.");
         } else {

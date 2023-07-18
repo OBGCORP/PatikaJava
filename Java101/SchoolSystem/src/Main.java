@@ -19,7 +19,7 @@ public class Main {
         Student student1 = new Student("Berke", "4373", "11-A", math, chem, phy);
         student1.addBulkExamNote(70, 60, 55, 45, 90, 100);
         student1.printNote();
-        student1.calcAverage();
-        student1.isPass();
+        student1.calculateAvgGrade();
+        student1.passingStatus();
     }
 }
