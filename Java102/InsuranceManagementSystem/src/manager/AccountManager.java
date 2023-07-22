@@ -50,24 +50,24 @@ public class AccountManager {
     }
 
     public void createAccount() {
-        Scanner scn = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         String name, surname, email, password, job, age;
         System.out.print("Enter name: ");
-        name = scn.nextLine();
+        name = sc.nextLine();
         System.out.print("Enter surname: ");
-        surname = scn.nextLine();
+        surname = sc.nextLine();
         System.out.print("Enter email: ");
-        email = scn.nextLine();
+        email = sc.nextLine();
         System.out.print("Enter password: ");
-        password = scn.nextLine();
+        password = sc.nextLine();
         System.out.print("Enter job: ");
-        job = scn.nextLine();
+        job = sc.nextLine();
         System.out.print("Enter age: ");
-        age = scn.nextLine();
+        age = sc.nextLine();
         User user = new User(name, surname, email, password, job, age);
 
         System.out.println("Are you individual (1 for yes 0 for no): ");
-        name = scn.nextLine();
+        name = sc.nextLine();
         Account prop;
         if (name.equals("1")) {
             prop = new Individual(user);
@@ -92,7 +92,6 @@ public class AccountManager {
                 System.out.println(e);
             }
         }
-
     }
 
     public void individualUserProcess() {
@@ -123,10 +122,6 @@ public class AccountManager {
                 }
             }
         }
-    }
-
-    public void enterpriseUserProcess() {
-
     }
 
     public TreeSet<Account> getAccounts() {
